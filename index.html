@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMK Negeri 1 Achdiya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SMK Negeri 1 Achdiya</h1>
+      <nav>
+        <ul>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#jurusan">Jurusan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Selamat Datang di Website Resmi</h2>
+      <p>SMK Negeri 1 Achdiya – Sekolah Vokasi Berkualitas</p>
+      <a href="#profil" class="btn">Lihat Profil Sekolah</a>
+    </div>
+  </section>
+
+  <section id="profil" class="content">
+    <div class="container">
+      <h3>Profil Sekolah</h3>
+      <p>SMK Negeri 1 Achdiya merupakan institusi pendidikan kejuruan yang berfokus pada pengembangan kompetensi teknis sesuai standar industri. Dengan didukung tenaga pendidik yang kompeten serta fasilitas yang memadai, sekolah ini berkomitmen menghasilkan lulusan yang siap bekerja dan berkontribusi secara profesional di dunia kerja.</p>
+      <p>Selain penguasaan keterampilan kejuruan, SMK Negeri 1 Achdiya juga menanamkan nilai-nilai disiplin, integritas, dan kewirausahaan kepada setiap peserta didik. Melalui program magang dan kemitraan dengan berbagai pihak industri, sekolah ini mempersiapkan generasi yang kompeten, adaptif, dan berdaya saing tinggi.</p>
+    </div>
+  </section>
+
+  <section id="jurusan" class="content gray">
+    <div class="container">
+      <h3>Jurusan Unggulan</h3>
+      <ul>
+        <li>Teknik Komputer dan Jaringan</li>
+        <li>Rekayasa Perangkat Lunak</li>
+        <li>Desain Komunikasi Visual</li>
+        <li>Akuntansi dan Keuangan Lembaga</li>
+        <li>Layanan Perbankan Syariah</li>
+        <li>Manajemen Perkantoran</li>
+        <li>Bisnis Digital</li>
+        <li>Bisnis Ritel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kontak" class="content">
+    <div class="container">
+      <h3>Kontak Kami</h3>
+      <p>Email: info@achdiya.riskha22.sch.id</p>
+      <p>Telepon: 087777263536</p>
+      <p>Alamat: Jl. Parangtritis No.KM.11, Dukuh, Sabdodadi, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55715</p>
+      <!-- Google Maps Embed -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.049281618501!2d110.35562929999999!3d-7.8899133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7b00889ad8f84d%3A0x2e0009ca7815eaf0!2sSMK%20Negeri%201%20Bantul!5e0!3m2!1sid!2sid!4v1756256221826!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SMK Negeri 1 Achdiya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol Dark Mode -->
+<button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+
+<!-- Tombol Scroll to Top -->
+<button id="scrollTopBtn" title="Kembali ke atas">⬆️</button>
+
+<!-- Script JavaScript -->
+  <script>
+  // Toggle Dark Mode
+  const toggleBtn = document.getElementById("darkModeToggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  // Scroll to Top Button
+  const scrollBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  </script>
+</body>
+</html>
